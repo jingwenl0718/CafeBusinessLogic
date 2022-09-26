@@ -1,4 +1,6 @@
 import java.util.Date;
+import java.text.SimpleDateFormat;  
+
 public class AlfredQuotes {
     
     public String basicGreeting() {
@@ -12,6 +14,38 @@ public class AlfredQuotes {
 
     public String guestGreeting(String name, String dayPeriod) {
         return String.format("Good %1$s, %2$s, Lovely to see you.", dayPeriod, name);
+    }
+
+    // Sensei bonus (use SimpleDateFormat and Format)
+    // ------version 1------ (show specific date)
+    public String guestGreeting() {
+        Date date = new Date();  
+        SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy");  
+        String strDate= formatter.format(date); 
+        return String.format("Today is %s! Lovely to see you.", strDate);
+    }
+
+    // ------version 2------ (show morning/afternoon/evening)
+    // public String guestGreeting() {
+    //     Date date = new Date();
+    //     int hours = date.getHours();
+    //     // int minutes = date.getMinutes();
+    //     if (hours < 12) {
+    //         return "Good morning!";
+    //     } else if (hours < 18) {
+    //         return "Good afternoon!";
+    //     } else {
+    //         return "Good evening! ";
+    //     }
+    // }
+
+    // write with a random string method
+    public String moodSwitcher(String a, String b) {
+        if (a.equals(b)) {
+            return "Yay, I am so happy!";
+        } else {
+            return "Oh no...";
+        }
     }
     
     public String dateAnnouncement() {
@@ -31,8 +65,5 @@ public class AlfredQuotes {
         }
     }
     
-	// NINJA BONUS
-	// See the specs to overload the guessGreeting method
-    // SENSEI BONUS
-    // Write your own AlfredQuote method using any of the String methods you have learned!
+    
 }
