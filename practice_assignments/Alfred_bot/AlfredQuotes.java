@@ -15,7 +15,7 @@ public class AlfredQuotes {
     }
     
     public String dateAnnouncement() {
-        Date date = new Date();
+        Date date = new Date();  
         return "It is currently " + date;
     }
     

@@ -21,7 +21,7 @@ public class AlfredTest {
             "I can't find my yo-yo. Maybe Alfred will know where it is.");
         String notRelevantTest = alfredBot.respondBeforeAlexis(
             "Maybe that's what Batman is about. Not winning. But failing.."
-        );
+        );  
         
         // Print the greetings to test.
         System.out.println(testGreeting);
