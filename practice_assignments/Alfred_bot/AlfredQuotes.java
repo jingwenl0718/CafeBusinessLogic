@@ -61,7 +61,7 @@ public class AlfredQuotes {
         } else if (b != -1) {
             return "At your service. As you wish, naturally.";
         } else {
-            return "Right. And with that I shall retire.";
+            return "Right. And with that I shall retire."; 
         }
     }
     

@@ -28,7 +28,7 @@ public class AlfredTest {
         
         String moodSwitcher = alfredBot.moodSwitcher("correct answer", "incorrect answer");
         // Print the greetings to test.
-        System.out.println(testGreeting);
+        System.out.println(testGreeting); 
         System.out.println(testGuestGreeting);
         System.out.println(testGuestGreeting2);
         System.out.println(testGuestGreeting3);
