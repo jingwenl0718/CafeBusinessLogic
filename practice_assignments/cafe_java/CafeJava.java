@@ -19,8 +19,8 @@ public class CafeJava {
         String customer3 = "Jimmy";
         String customer4 = "Noah";
     
-        // Order completions (add yours below)
-        boolean isReadyOrder1 = false;
+        // Order completions (add yours below)  
+        boolean isReadyOrder1 = false;  
         boolean isReadyOrder2 = true;
         boolean isReadyOrder3 = false;
         boolean isReadyOrder4 = false;
